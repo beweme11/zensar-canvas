@@ -1,23 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import DrawingCanvas from './DrawingCanvas.jsx';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App min-h-screen flex flex-col items-center justify-center bg-gray-100 text-center">
+      <h1 className="font-poppins text-4xl pt-4 font-semibold mb-4">Interactive Drawing Canvas - Prathamesh Mahale Roll No. 36</h1>
+      <DrawingCanvas />
     </div>
   );
 }
